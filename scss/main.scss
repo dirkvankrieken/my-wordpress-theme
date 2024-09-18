@@ -1,0 +1,30 @@
+@use 'components/main';
+@use 'components/navbar';
+@use 'components/post';
+@use 'base/reset';
+@use 'base/variables';
+@use 'pages/portfolio';
+@use 'pages/blog';
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--off-black);
+  color: var(--white);
+}
+
+a {
+  color: white;
+}
+
+p {
+  margin-bottom: 30px; /* between paragraphs */
+}
+
+.hidden {
+  display: none;
+}
