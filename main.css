@@ -25,34 +25,6 @@ main p {
   margin: 25px 0;
 }
 
-main ul {
-  margin: 0;
-  padding: 0;
-}
-
-main li {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin: 20px auto;
-  width: 80%;
-  border-radius: 10px;
-  background-color: var(--grey);
-  list-style-type: none;
-}
-
-main li a {
-  border-radius: 10px;
-  display: block;
-  padding: 15px;
-  color: white;
-  text-decoration: none;
-}
-
-main li a:hover {
-  background-color: var(--green);
-  color: var(--off-black);
-}
-
 @media only screen and (min-width: 900px) {
   main {
     width: 500px;
@@ -95,6 +67,18 @@ li {
     display: none !important;
   }
 }
+footer {
+  text-align: center;
+}
+
+footer i {
+  width: 100px;
+}
+
+footer a:hover {
+  color: var(--green);
+}
+
 .post {
   background-color: #333333;
 }

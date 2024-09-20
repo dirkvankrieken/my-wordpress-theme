@@ -1,18 +1,21 @@
-<?php get_header(); ?>
-
+<?php
+/* Template Name: Front Page */
+get_header();
+?>
 <main>
-		<h1>Dirk van Krieken</h1>
-			<span>Utrecht, The Netherlands</span>
-			<p>Schrijver</p>
-			<ul>
-				<li><a href="https://typeshare.co/dirkvankrieken">Typeshare.co</a></li>
-				<li><a href="https://x.com/dirkvkr">X/Twitter</a></li>
-				<li><a href="https://www.linkedin.com/in/dirk-van-krieken/">LinkedIn</a></li>
-				<li><a href="https://github.com/dirkvankrieken/">Github</a></li>
-	
-			</ul>
-	</main>
-
+	<?php
+	if ( have_posts() ) :
+    while ( have_posts() ) : the_post();
+?>
+        <h1><?php the_title(); ?></h1>
+        <div>
+            <?php the_content(); // Haalt de inhoud van de WordPress editor op ?>
+        </div>
+<?php
+    endwhile;
+endif;
+?>
+</main>
 <?php
 get_footer();
 ?>
