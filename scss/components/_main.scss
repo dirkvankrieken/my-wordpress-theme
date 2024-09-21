@@ -1,6 +1,10 @@
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 20rem;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 1px;
   background-color: var(--darkgrey);
 }

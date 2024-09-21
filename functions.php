@@ -17,4 +17,40 @@ function ignoreCertainFiles($exclude_filters) {
     return $exclude_filters;
 }
 
+function create_portfolio_post_type() {
+    $labels = array(
+        'name'               => 'Portfolio',
+        'singular_name'      => 'Portfolio Item',
+        'menu_name'          => 'Portfolio',
+        'name_admin_bar'     => 'Portfolio Item',
+        'add_new'            => 'Voeg nieuw item toe',
+        'add_new_item'       => 'Voeg nieuw portfolio item toe',
+        'new_item'           => 'Nieuw item',
+        'edit_item'          => 'Bewerk item',
+        'view_item'          => 'Bekijk item',
+        'all_items'          => 'Alle portfolio items',
+        'search_items'       => 'Zoek portfolio items',
+        'not_found'          => 'Geen items gevonden',
+        'not_found_in_trash' => 'Geen items in de prullenbak gevonden'
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'portfolio' ),
+        'capability_type'    => 'post',
+        'has_archive'        => false, // veroorzaakt mogelijk het probleem
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' )
+    );
+
+    register_post_type( 'portfolio', $args );
+}
+add_action( 'init', 'create_portfolio_post_type' );
+
 ?>

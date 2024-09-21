@@ -1,6 +1,10 @@
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 20rem;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 1px;
   background-color: var(--darkgrey);
 }
@@ -68,6 +72,9 @@ li {
   }
 }
 footer {
+  height: 10rem;
+  position: relative;
+  bottom: -50px;
   text-align: center;
 }
 
@@ -124,50 +131,19 @@ picture {
   --off-black: hsl(0, 0%, 8%);
 }
 
-.grid {
-  padding: 10px;
-  display: grid;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: 10px;
-  grid-template-columns: 1fr 1fr;
-}
-
-#portfolio-wrapper {
-  padding: 20px;
-  border-radius: 10px;
+.portfolio-wrapper {
+  width: 50rem;
   margin: auto;
-  background-color: #1f1f1f;
-}
-
-#portfolio-wrapper h1 {
-  font-size: 2rem;
-  display: block;
-  text-align: center;
-}
-
-#portfolio-wrapper h2 {
-  font-size: 1.2rem;
-}
-
-.item {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
-  border-radius: 5px;
-  background-color: #333;
-  padding: 10px;
+  justify-content: center;
+  background-color: var(--darkgrey);
 }
 
-.category-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.link-container {
-  display: flex;
-  justify-content: space-between;
+.portfolio-item {
+  padding: 50px;
+  margin: 50px;
+  width: 20rem;
+  background-color: var(--grey);
 }
 
 .blog-post {
@@ -205,8 +181,6 @@ picture {
 body {
   box-sizing: border-box;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: "Inter", sans-serif;
   background-color: var(--off-black);
   color: var(--white);
