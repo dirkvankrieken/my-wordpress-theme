@@ -2,14 +2,17 @@
 @use 'components/navbar';
 @use 'components/footer';
 @use 'components/post';
+@use 'components/categories';
 @use 'base/reset';
 @use 'base/variables';
 @use 'pages/portfolio';
 @use 'pages/blog';
 
 body {
+  flex-direction: column;
+  justify-content: space-around;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 93vh;
   font-family: 'Inter', sans-serif;
   background-color: var(--off-black);
   color: var(--white);

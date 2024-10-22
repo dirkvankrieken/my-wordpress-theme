@@ -33,4 +33,6 @@ else :
 endif;
 ?>
 </div> <!-- Sluit de wrapper div hier af -->
-<?php get_footer(); ?>
+<?php
+get_footer();
+?>

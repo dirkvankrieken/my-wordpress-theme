@@ -7,6 +7,7 @@
     <header>
         <div class="wrapper">
             <nav>
+				<h1><?php bloginfo('name'); ?></h1>
                 <?php 
                     wp_nav_menu( array(
                         'theme_location' => 'primary', // Zorg dat 'primary' overeenkomt met jouw themalocatie

@@ -4,6 +4,22 @@ li {
   margin: 0;
 }
 
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -20,11 +36,19 @@ nav ul {
 }
 
 li {
+  font-size: 14px;
+  font-weight: 100;
+  width: 150px;
+  text-align: center;
   padding: 10px;
-  margin: 20px;
+  margin: 10px 5px;
   list-style-type: none;
   background-color: #333333;
   border-radius: 10px;
+}
+
+li a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 900px) {

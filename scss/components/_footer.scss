@@ -1,14 +1,10 @@
 footer {
-  height: 10rem;
-  position: relative;
-  bottom: -50px;
-  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer i {
-  width: 100px;
-}
-
-footer a:hover {
-  color: var(--green);
+footer a {
+  margin: 20px;
 }

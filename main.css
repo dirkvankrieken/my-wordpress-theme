@@ -1,18 +1,12 @@
 main {
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 20rem;
-  text-align: center;
   margin: 0 auto;
   border-radius: 1px;
   background-color: var(--darkgrey);
-}
-
-main img {
-  margin-top: 40px;
-  max-width: 100px;
-  border-radius: 50%;
 }
 
 main h1 {
@@ -31,13 +25,29 @@ main p {
 
 @media only screen and (min-width: 900px) {
   main {
-    width: 500px;
+    width: 800px;
   }
 }
 ul,
 li {
   padding: 0;
   margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -56,11 +66,19 @@ nav ul {
 }
 
 li {
+  font-size: 14px;
+  font-weight: 100;
+  width: 150px;
+  text-align: center;
   padding: 10px;
-  margin: 20px;
+  margin: 10px 5px;
   list-style-type: none;
   background-color: #333333;
   border-radius: 10px;
+}
+
+li a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 900px) {
@@ -72,22 +90,50 @@ li {
   }
 }
 footer {
-  height: 10rem;
-  position: relative;
-  bottom: -50px;
-  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer i {
-  width: 100px;
-}
-
-footer a:hover {
-  color: var(--green);
+footer a {
+  margin: 20px;
 }
 
 .post {
   background-color: #333333;
+}
+
+.category-button {
+  background-color: rgb(83, 83, 83);
+}
+
+.category-picker {
+  border: 1px solid white;
+  width: 500px;
+  margin: auto;
+}
+
+.category-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer; /* Geeft aan dat het klikbaar is */
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-item {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.category-item:hover {
+  background-color: #f0f0f0;
 }
 
 *,
@@ -149,7 +195,7 @@ picture {
 .blog-post {
   margin: 0 auto 50px;
   padding: 20px;
-  max-width: 800px;
+  width: 800px;
   background-color: #1f1f1f;
 }
 
@@ -179,8 +225,10 @@ picture {
 }
 
 body {
+  flex-direction: column;
+  justify-content: space-around;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 93vh;
   font-family: "Inter", sans-serif;
   background-color: var(--off-black);
   color: var(--white);
