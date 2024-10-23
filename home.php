@@ -22,7 +22,7 @@ $categories = get_categories();
   while(have_posts()) {
     the_post(); ?>
     <div class="blog-post">
-	<?php
+<!-- 	<?php
     // Haal de categorieën op
     $categories = get_the_category();
     if ( ! empty( $categories ) ) {
@@ -33,12 +33,12 @@ $categories = get_categories();
         }
         echo '</div>';
     }
-    ?>
+    ?> -->
 		<div class="blog-header">
-			<div class="blog-date">Door <?php the_author_posts_link(); ?> op <?php echo get_the_date('l j F, Y'); ?>
-		</div>
 			<div class="blog-header-content"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
   		</div>
+			<div class="blog-date">Door <?php the_author_posts_link(); ?> op <?php echo get_the_date('l j F, Y'); ?>
+		</div>
 		<div class="blog-content">
         <?php the_excerpt(); ?>
         <p><a href="<?php the_permalink(); ?>">Verder lezen &raquo;</a></p>

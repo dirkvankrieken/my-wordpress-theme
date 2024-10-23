@@ -14,16 +14,12 @@ body {
   box-sizing: border-box;
   min-height: 93vh;
   font-family: 'Inter', sans-serif;
-  background-color: var(--off-black);
-  color: var(--white);
+  background-color: var(--lightblue);
+  color: var(--darkgrey);
 }
 
 a {
-  color: white;
-}
-
-p {
-  margin-bottom: 30px; /* between paragraphs */
+  color: var(--off-black);
 }
 
 .hidden {

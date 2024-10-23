@@ -6,7 +6,7 @@ main {
   min-height: 20rem;
   margin: 0 auto;
   border-radius: 1px;
-  background-color: var(--darkgrey);
+  background-color: var(--lightgrey);
 }
 
 main h1 {
@@ -73,7 +73,7 @@ li {
   padding: 10px;
   margin: 10px 5px;
   list-style-type: none;
-  background-color: #333333;
+  background-color: var(--lightgrey);
   border-radius: 10px;
 }
 
@@ -105,7 +105,8 @@ footer a {
 }
 
 .category-button {
-  background-color: rgb(83, 83, 83);
+  background-color: #ffffff;
+  border: none;
 }
 
 .category-picker {
@@ -128,7 +129,6 @@ footer a {
 .category-item {
   padding: 10px;
   cursor: pointer;
-  border: 1px solid #ccc;
   margin-bottom: 5px;
 }
 
@@ -172,6 +172,8 @@ picture {
 :root {
   --green: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
+  --lightgrey: #e6e6e6;
+  --lightblue: #94bac6;
   --grey: hsl(0, 0%, 20%);
   --darkgrey: hsl(0, 0%, 12%);
   --off-black: hsl(0, 0%, 8%);
@@ -196,7 +198,7 @@ picture {
   margin: 0 auto 50px;
   padding: 20px;
   width: 800px;
-  background-color: #1f1f1f;
+  background-color: var(--lightgrey);
 }
 
 .blog-post h1 {
@@ -207,21 +209,18 @@ picture {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 0 50px 0;
 }
 
 .blog-date {
-  padding: 20px;
+  padding: 10px;
 }
 
 .blog-header-content {
-  padding: 20px;
-  background-color: #333;
+  padding: 10px;
 }
 
 .blog-content {
-  padding: 20px;
-  background-color: #333;
+  padding: 10px;
 }
 
 body {
@@ -230,16 +229,12 @@ body {
   box-sizing: border-box;
   min-height: 93vh;
   font-family: "Inter", sans-serif;
-  background-color: var(--off-black);
-  color: var(--white);
+  background-color: var(--lightblue);
+  color: var(--darkgrey);
 }
 
 a {
-  color: white;
-}
-
-p {
-  margin-bottom: 30px; /* between paragraphs */
+  color: var(--off-black);
 }
 
 .hidden {
