@@ -5,7 +5,9 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
+		<div class="logo">
+			<span class="logo-text">DVK</span>
+		</div>
             <nav>
                 <?php 
                     wp_nav_menu( array(
@@ -15,5 +17,4 @@
                     ) );
                 ?>
             </nav>
-        </div>
     </header>

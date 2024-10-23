@@ -1,3 +1,5 @@
-<footer>
+<!-- <footer>
 	dirkvankrieken.com
 </footer>
+</div>
+</div> -->

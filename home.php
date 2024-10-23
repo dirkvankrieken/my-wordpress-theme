@@ -46,7 +46,6 @@ $categories = get_categories();
 
     </div>
   <?php }
-  get_footer();
 ?>
 
 <script>

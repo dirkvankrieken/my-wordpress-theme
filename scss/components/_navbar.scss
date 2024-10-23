@@ -4,26 +4,32 @@ li {
   margin: 0;
 }
 
-header {
-  text-align: center;
+.logo {
+  margin: 20px 50px;
+  font-size: 1.5rem;
 }
 
-header h1 {
-  font-size: 2rem;
+header {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
 }
 
 .wrapper {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+nav {
+  margin: 0 auto;
+  width: 800px;
 }
 
 nav ul {
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
+  align-items: center;
 }
 
 .nav-items {
